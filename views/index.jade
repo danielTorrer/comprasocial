@@ -1,0 +1,31 @@
+doctype html(lang='en')
+head
+	meta(charset='utf-8')
+	|     
+	meta(name='viewport', content='width=device-width, initial-scale=1.0')
+	|     
+	meta(name='description', content='')
+	|     
+	meta(name='author', content='Dashboard')
+	|     
+	title Contador
+
+	link(type="text/css" rel="stylesheet" href="css/homescreen.css")
+	link(type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto")
+	
+	body
+		
+		.logo-container
+			img(src="img/logo.png", alt="")
+			.button-container
+				p Impulsa el mercado local
+				a.waves-effect.waves-light.btn(href="/mas") Conocer más
+
+				a.waves-effect.waves-light.btn(href="/dashboard") Ver productos
+
+		.video-container
+			video.fillWidth(autoplay loop poster='video/Coverr-Market.jpg')
+				source(src='video/Coverr-Market.webm', type='video/webm')
+				source(src='video/Coverr-Market.mp4', type='video/mp4')
+
+		script(src="js/dependencies/jquery.min.js")
