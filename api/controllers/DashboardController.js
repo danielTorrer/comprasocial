@@ -9,6 +9,10 @@ module.exports = {
 
 	index: function(req, res){
 		res.view('');
+	},
+
+	mas: function(req, res){
+		res.view('');
 	}
 
-}
+};
