@@ -9,6 +9,43 @@ module.exports = {
 
   attributes: {
 
+    expediente: {
+      type: "string",
+      columnName: 'expediente',
+    },
+
+    nombre: {
+      type: 'string'
+    },
+
+    tel: {
+      type: 'string'
+    },
+
+    descripcion: {
+      type: 'string'
+    },
+
+    logo: {
+      type: 'string'
+    },
+
+    direccion: {
+      type: 'string'
+    },
+
+    rubro: {
+      type: 'string'
+    },
+
+    pagina: {
+      type: 'string'
+    },
+
+    productos: {
+      collection: 'producto',
+      via: 'iap'
+    }
+
   }
 };
-

@@ -8,7 +8,30 @@
 module.exports = {
 
   attributes: {
+    clave: {
+      type: 'string'
+    },
+
+    nombre: {
+      type: 'string'
+    },
+
+    descripcion: {
+      type: 'string'
+    },
+
+    imagen: {
+      type: 'string'
+    },
+
+    precio: {
+      type: 'string'
+    },
+
+    iap: {
+      columnName: 'expediente',
+      model: 'iap'
+    }
 
   }
 };
-
