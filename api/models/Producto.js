@@ -21,11 +21,13 @@ module.exports = {
     },
 
     imagen: {
-      type: 'string'
+      type: 'string',
+      defaultsTo: 'http://lorempixel.com/640/480/abstract'
     },
 
     precio: {
-      type: 'string'
+      type: 'string',
+      defaultsTo: 'Preguntar'
     },
 
     iap: {

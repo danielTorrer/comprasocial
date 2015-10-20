@@ -12,6 +12,7 @@ module.exports = {
     expediente: {
       type: "string",
       columnName: 'expediente',
+      primaryKey: true
     },
 
     nombre: {

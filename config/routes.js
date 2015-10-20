@@ -41,6 +41,11 @@
     action : 'process'
   },
 
+  '/dashboard/iap/:id': {
+      controller: 'DashboardController',
+      action: 'iap'
+  },
+
   '/mas': {
     controller: 'DashboardController',
     action: 'mas'

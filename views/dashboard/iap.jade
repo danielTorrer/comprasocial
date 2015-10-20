@@ -8,7 +8,7 @@ head
 	|     
 	meta(name='author', content='Dashboard')
 	|     
-	title Productos
+	title #{iap[0].nombre}
 
 	link(type="text/css" rel="stylesheet" href="/css/materialize.min.css"  media="screen,projection")
 	link(type="text/css" rel="stylesheet" href="/css/dashboard.css"  media="screen,projection")
@@ -20,14 +20,14 @@ head
 			nav.top-nav.teal.accent-4
 				.container
 					.nav-wrapper
-						a.page-title Productos destacados
+						a.page-title #{iap[0].nombre}
 						a.button-collapse.top-nav.full.hide-on-large-only(href="#" data-activates="nav-mobile")
 							i.mdi-navigation-menu
 
 			ul#nav-mobile.side-nav.fixed
 				li.logo
 					div.logo-container
-						img(src="img/logo_small.png")
+						img(src="/img/logo_small.png")
 				li.no-padding
 					ul.collapsible.collapsible-accordion
 						li.bold
@@ -49,43 +49,14 @@ head
 
 				li
 					div
-						a.btn.waves-effect.waves-light(href="#") Inscribe tu AC
+						a.btn.waves-effect.waves-light(href="#") Inscribe tu IAP
 
 
 		main
 			.row
-				each producto in productos
-					.col.s6.m3
-						.card
-							.card-image
-								img(src="#{producto.imagen}")
-								span.card-title #{producto.nombre}           
-							.card-content
-								table.highlight
-									tbody
-										tr
-											td
-												i(class="zmdi zmdi-info")
-											td
-												span #{producto.descripcion}
-										tr
-											td
-												i(class="zmdi zmdi-money")
-											td
-												span #{producto.precio}
-										tr
-											td 
-												i(class="zmdi zmdi-accounts")
-											td
-												a(href="/dashboard/iap/#{producto.iap.expediente}")
-													span #{producto.iap.nombre}
-											
-							.card-action
-								a(href='/dashboard/producto/#{producto.clave}') Ver más
-								
-
-
-
+				.col.s12
+                    img(src="", alt="")
+					h6 #{iap[0].descripcion}
 
 
 		footer.container
