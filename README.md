@@ -1,5 +1,5 @@
 # Compra Social
-Compra social es una plataforma que permite adquirir productos directamente de [IAPs](https://es.wikipedia.org/wiki/Instituci%C3%B3n_de_Asistencia_Privada) elaborados por personas en situaciones vulnerables con el fin de que su trabajo los integre a la economia local.
+Compra social es una plataforma que permite adquirir productos directamente de [IAPs](https://es.wikipedia.org/wiki/Instituci%C3%B3n_de_Asistencia_Privada) elaborados por personas con discapacidades, en situaciones vulnerables  con el fin de que su trabajo los integre a la economía local.
 
 Por medio de la plataforma es posible conocer y contactar a las IAP que ofrecen productos y servicios generados por los distintos actores de la sociedad dentro de dichas IAPs. La intención de la app es que las personas cambien su habito de compras y, en vez de comprarle a las cadenas de supermercados, se compre y consuma producción local beneficiando a los productores y reactivando la economía local.
 
