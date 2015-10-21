@@ -27,8 +27,13 @@ module.exports = {
       type: 'string'
     },
 
-    logo: {
+    smallDescipcion: {
       type: 'string'
+    },
+
+    logo: {
+      type: 'string',
+      defaultsTo: ''
     },
 
     direccion: {
@@ -48,5 +53,18 @@ module.exports = {
       via: 'iap'
     }
 
+  },
+
+  afterCreate: function(obj,cb){
+    Iap.findOne({expediente: obj.expediente})
+      .exec(function findOneDia(err, iap){
+        iap.smallDescipcion = iap.descripcion.substring(0,100) + "..."
+        iap.save(function(err){
+          if (err)
+            console.log(err);
+        });
+      });
   }
+
+
 };

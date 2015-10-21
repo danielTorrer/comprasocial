@@ -33,7 +33,7 @@ module.exports = {
 	iapAll:function(req, res){
 		Iap.find()
 			.exec(function(err, iap){
-				return res.view({iap: iap, title: 'IAP'});
+				return res.view({iaps: iap, title: 'IAP'});
 			})
 	}
 

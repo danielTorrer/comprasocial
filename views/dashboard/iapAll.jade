@@ -1,0 +1,47 @@
+extends header
+		
+block content
+
+	main
+		.row
+			each iap in iaps
+				.col.s6.m3
+					.card
+						.card-image
+							img(src="#{iap.logo }")
+							span.card-title #{iap.nombre}           
+						.card-content
+							table.highlight
+								tbody
+									tr
+										td.descripcion
+											i(class="zmdi zmdi-info")
+										td.descripcion
+											span #{iap.smallDescipcion}
+									tr
+										td 
+											i(class="zmdi zmdi-accounts")
+										td
+											a(href="/dashboard/iap/#{iap.expediente}")
+												span #{iap.nombre}
+										
+						.card-action
+							a(href='/dashboard/iap/#{iap.expediente}') Ver más
+							
+
+
+
+
+
+	footer.container
+		.row
+			div.col.l6.s6
+				p © 2015 Comercio Social. Todos los derechos reservados
+			div.col.l3.s3
+				p Términos y Condiciones
+			div.col.l3.s3
+				p Prensa
+
+	script(type="text/javascript" src="/js/dependencies/jquery.min.js")
+	script(type="text/javascript" src="/js/dependencies/materialize.min.js")
+	script(type="text/javascript" src="/js/dashboard.js")

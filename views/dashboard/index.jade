@@ -23,15 +23,17 @@ block content
 												i(class="zmdi zmdi-money")
 											td
 												span #{producto.precio}
-										tr
-											td 
-												i(class="zmdi zmdi-accounts")
-											td
-												a(href="/dashboard/iap/#{producto.iap.expediente}")
-													span #{producto.iap.nombre}
+
+										if producto.iap !== undefined
+											tr
+												td 
+													i(class="zmdi zmdi-accounts")
+												td
+													a(href="/dashboard/iap/#{producto.iap.expediente}")
+														span #{producto.iap.nombre}
 											
 							.card-action
-								a(href='/dashboard/producto/#{producto.clave}') Ver más
+								a(href='#') Ver más
 								
 
 

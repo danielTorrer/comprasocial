@@ -138,3 +138,15 @@ a.button-collapse.top-nav {
 .card-panel.teal a{
     margin-left: 10px;
 }
+
+.nav-wrapper{
+    width: 1100px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+
+.card .card-content{
+    min-height: 230px;
+    height: 230px;
+}
