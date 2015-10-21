@@ -46,9 +46,19 @@
       action: 'iap'
   },
 
-  '/mas': {
+  '/dashboard/iap': {
+      controller: 'DashboardController',
+      action: 'iapAll'
+  },
+
+  '/dashboard/productos': {
     controller: 'DashboardController',
-    action: 'mas'
+    action: 'index'
+  },
+
+  '/acerca': {
+    controller: 'DashboardController',
+    action: 'acerca'
   }
 
   /***************************************************************************

@@ -7,7 +7,7 @@ html, body{
 
 p{
     color: white;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
 }
 
 .logo-container{
@@ -15,6 +15,10 @@ p{
     width: 100%;
     height: 100%;
     text-align: center;
+}
+
+.logo-container img{
+  margin-top: 60px;
 }
 
 video.fillWidth{
@@ -28,8 +32,8 @@ video.fillWidth{
     z-index: -100;
     -webkit-transform: translateX(-50%) translateY(-70%);
     transform: translateX(-50%) translateY(-70%);
-    background-size: cover; 
-} 
+    background-size: cover;
+}
 
 .waves-effect {
     position: relative;

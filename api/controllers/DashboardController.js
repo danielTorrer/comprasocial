@@ -11,13 +11,13 @@ module.exports = {
 		Producto.find()
 		.populate('iap')
 		.exec(function(err, productos){
-			return res.view({productos: productos });
+			return res.view({productos: productos, title: 'Productos' });
 		});
 
 	},
 
-	mas: function(req, res){
-		res.view('');
+	acerca: function(req, res){
+		res.view({title: 'Acerca de'});
 	},
 
 	iap: function(req, res){
@@ -26,9 +26,15 @@ module.exports = {
 			.exec(function(err, iap){
 				if (err)
 					console.log(err);
-				console.log(iap);
-				return res.view({iap: iap});
+				return res.view({iap: iap, title: iap[0].nombre});
 			});
+	},
+
+	iapAll:function(req, res){
+		Iap.find()
+			.exec(function(err, iap){
+				return res.view({iap: iap, title: 'IAP'});
+			})
 	}
 
 };
