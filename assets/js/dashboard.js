@@ -8,4 +8,5 @@ $(document).ready(function(){
 function inicializarMaterial(){
 	$(".button-collapse").sideNav();
 	$('.collapsible').collapsible();
+	$('.modal-trigger').leanModal();
 }

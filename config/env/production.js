@@ -17,7 +17,7 @@
    * environment (see config/connections.js and config/models.js )           *
    ***************************************************************************/
 
-  connections: {
+  /*connections: {
     MongoDBServer:{
       adapter: 'sails-mongo',
       url: "mongodb://mongo:27017/contador"
@@ -27,12 +27,12 @@
   models: {
     connection: 'MongoDBServer'
   },
-
+  */
   /***************************************************************************
    * Set the port in the production environment to 80                        *
    ***************************************************************************/
 
-  port: process.env.PORT || 3000,
+  //port: process.env.PORT || 3000,
 
   /***************************************************************************
    * Set the log level in production environment to "silent"                 *

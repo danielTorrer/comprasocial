@@ -51,6 +51,12 @@ head
 					div
 						a.btn.waves-effect.waves-light(href="#") Inscribe tu IAP
 
+		
+		#modal.modal
+			.modal-content
+				h4 Inscribe tu IAP
+			.modal-footer
+				a.modal-action.modal-close.waves-effect.waves-green.btn-flat(href="#") Enviar
 
 		main
 			.row
@@ -63,16 +69,47 @@ head
 			.row
 				.col.s12.m4
 					.card-panel.teal
-						i.zmdi.zmdi-phone-ring 
+						i.white-text.zmdi.zmdi-phone-ring.zmdi-hc-2x 
 						span.white-text #{iap[0].tel}				
 				.col.s12.m4
 					.card-panel.teal
-						i.zmdi.zmdi-home
+						i.white-text.zmdi.zmdi-home.zmdi-hc-2x
 						span.white-text #{iap[0].direccion}
 				.col.s12.m4
 					.card-panel.teal
-						span.white-text #{iap[0].pagina}
+						i.white-text.zmdi.zmdi-window-restore.zmdi-hc-2x
+						a.white-text(href="#{iap[0].pagina}") #{iap[0].nombre}
+			
+			.row
 
+				each producto in iap[0].productos
+					.col.s6.m3
+						.card
+							.card-image
+								img(src="#{producto.imagen}")
+								span.card-title #{producto.nombre}           
+							.card-content
+								table.highlight
+									tbody
+										tr
+											td
+												i(class="zmdi zmdi-info")
+											td
+												span #{producto.descripcion}
+										tr
+											td
+												i(class="zmdi zmdi-money")
+											td
+												span #{producto.precio}
+										tr
+											td 
+												i(class="zmdi zmdi-accounts")
+											td
+												span #{iap[0].nombre}
+											
+							.card-action
+								a(href='/dashboard/producto/#{producto.clave}') Ver más
+								
 
 		footer.container
 			.row

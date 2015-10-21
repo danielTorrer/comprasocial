@@ -22,7 +22,7 @@ module.exports = {
 
     imagen: {
       type: 'string',
-      defaultsTo: 'http://lorempixel.com/640/480/abstract'
+      defaultsTo: 'http://lorempixel.com/640/480/technics'
     },
 
     precio: {

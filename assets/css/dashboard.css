@@ -133,3 +133,8 @@ a.button-collapse.top-nav {
     border-radius: 16px;
     background-color: #E4E4E4;
 }
+
+.card-panel.teal span,
+.card-panel.teal a{
+    margin-left: 10px;
+}
