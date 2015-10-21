@@ -54,9 +54,24 @@ head
 
 		main
 			.row
-				.col.s12
-                    img(src="", alt="")
-					h6 #{iap[0].descripcion}
+				.col.s12.iap-desc
+					h4 ¿Qué hacemos?
+					h5 #{iap[0].descripcion}
+					.chip
+						span #{iap[0].rubro}
+			
+			.row
+				.col.s12.m4
+					.card-panel.teal
+						i.zmdi.zmdi-phone-ring 
+						span.white-text #{iap[0].tel}				
+				.col.s12.m4
+					.card-panel.teal
+						i.zmdi.zmdi-home
+						span.white-text #{iap[0].direccion}
+				.col.s12.m4
+					.card-panel.teal
+						span.white-text #{iap[0].pagina}
 
 
 		footer.container
@@ -68,6 +83,6 @@ head
 				div.col.l3.s3
 					p Prensa
 
-		script(type="text/javascript" src="js/dependencies/jquery.min.js")
-		script(type="text/javascript" src="js/dependencies/materialize.min.js")
-		script(type="text/javascript" src="js/dashboard.js")
+		script(type="text/javascript" src="/js/dependencies/jquery.min.js")
+		script(type="text/javascript" src="/js/dependencies/materialize.min.js")
+		script(type="text/javascript" src="/js/dashboard.js")
