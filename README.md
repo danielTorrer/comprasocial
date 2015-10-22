@@ -3,6 +3,9 @@ Compra social es una plataforma que permite adquirir productos directamente de [
 
 Por medio de la plataforma es posible conocer y contactar a las IAP que ofrecen productos y servicios generados por los distintos actores de la sociedad dentro de dichas IAPs. La intención de la app es que las personas cambien su habito de compras y, en vez de comprarle a las cadenas de supermercados, se compre y consuma producción local beneficiando a los productores y reactivando la economía local.
 
+## Preview
+La app esta lista para usarse en [heroku](http://comprasocial.herokuapp.com/)
+
 ## Diseño
 Todo el diseño esta basasdo en las especificaciones de diseño de google [Material Design](http://www.google.com/design/spec/material-design/introduction.html) que nos permite tener una mejor estructura visual y de información.
 
@@ -66,21 +69,26 @@ $ NODE_ENV=production node app.js
 ## API
 Este proyecto tiene una API pública con el fin de que la comunidad pueda extenderlo a otro tipo de dispositivos o aplicaciones.
 
+
 #### Producto
+[http://comprasocial.herokuapp.com/producto](http://comprasocial.herokuapp.com/producto)
+
 |Verb|Descripción|
 |-----|----------|
 |```GET /producto```|Listado de Producto|
 |```POST /producto```|Crear Producto|
-|```PUT /producto/id```|Editar Producto |
-|```DELETE /producto/id```|Eliminar Producto|
+|```PUT /producto/:id```|Editar Producto |
+|```DELETE /producto/:id```|Eliminar Producto|
 
 #### IAP
+[http://comprasocial.herokuapp.com/iap](http://comprasocial.herokuapp.com/iap)
+
 |Verb|Descripción|
 |-----|----------|
 |```GET /iap```|Listado de IAP|
 |```POST /iap```|Crear IAP|
-|```PUT /iap/id```|Editar IAP |
-|```DELETE /iap/id```|Eliminar IAP|
+|```PUT /iap/:id```|Editar IAP |
+|```DELETE /iap/:id```|Eliminar IAP|
 
 ## Futuro
 Esta aplicación se puede expandir en un futuro para implementar métodos de pago por tarjeta y en autoservicios (OXXO, Supermercados) y así lograr una plataforma que sea utilizada por una población mas extensa.
