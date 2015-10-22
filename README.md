@@ -10,7 +10,7 @@ Todo el diseño esta basasdo en las especificaciones de diseño de google [Mater
 
 Utilizamos tecnologias libres y gratuitas lo que ayuda a mantener mejor el proyecto por la comunidad
 
-[Imgur](http://i.imgur.com/IPB50jo.png)
+![webstack](http://i.imgur.com/IPB50jo.png)
 
 ### :rocket: Showtime
 
