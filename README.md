@@ -8,6 +8,10 @@ Todo el diseño esta basasdo en las especificaciones de diseño de google [Mater
 
 ## Tecnologia e instalación
 
+Utilizamos tecnologias libres y gratuitas lo que ayuda a mantener mejor el proyecto por la comunidad
+
+[Imgur](http://i.imgur.com/IPB50jo.png)
+
 ### :rocket: Showtime
 
 Debes tener instalado git, node.js, npm y tu gestor de base de datos favorito.
